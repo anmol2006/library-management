@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Retrieve Records</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h2 class="heading">Choose data type</h2>
+  <form action="table_handler.php" method="post" autocomplete="off">
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="table" value="books" checked>
+    <label class="form-check-label" for="books">
+      Books
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="table" value="branch">
+    <label class="form-check-label" for="branches">
+      Branches
+    </label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="table" value="employee">
+  <label class="form-check-label" for="employees">
+    Employees
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="table" value="customer">
+  <label class="form-check-label" for="customers">
+    Customers
+  </label>
+</div>
+<div class="form-group row">
+  <div class="col-sm-10">
+    <button type="submit" class="btn btn-success select-table-btn">Proceed</button>
+    <button type="reset" class="btn btn-primary select-table-btn" name="button">Reset</button>
+  </div>
+</div>
+
+
+  </form>
+</body>
+
+</html>

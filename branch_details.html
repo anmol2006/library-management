@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Branch Details</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h2 class="heading">New Branch Entry</h2>
+  <form action="branch_insert.php" method="post" autocomplete="off">
+    <div class="form-group row">
+      <label for="branchid" class="col-sm-2 col-form-label">Branch ID: </label>
+      <div class="col-sm-4">
+        <input type="number" name="branchid" class="form-control" placeholder="2-digit Branch ID" required autofocus>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="managerid" class="col-sm-2 col-form-label">Manager ID: </label>
+      <div class="col-sm-4">
+        <input type="number" name="managerid" class="form-control" placeholder="3-digit Manager ID" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="address" class="col-sm-2 col-form-label">Address: </label>
+      <div class="col-sm-4">
+        <textarea class="form-control" rows="3" name="address" placeholder="Branch address" required></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-success">Register</button>
+        <button type="reset" class="btn btn-primary" name="button">Reset</button>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Customer Registration</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h2 class="heading">Customer Registration</h2>
+  <div class="">
+    <form class="" action="customer_insert.php" method="post" autocomplete="off">
+      <div class="form-group row">
+        <label for="card_id" class="col-sm-2 col-form-label">Library Card ID: </label>
+        <div class="col-sm-4">
+          <input type="number" name="card_id" class="form-control" placeholder="e.g. 101" required autofocus>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name: </label>
+        <div class="col-sm-4">
+          <input type="text" name="name" class="form-control" placeholder="e.g. John" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="contact_no" class="col-sm-2 col-form-label">Contact No: </label>
+        <div class="col-sm-4">
+          <input type="text" name="contact_no" class="form-control" placeholder="e.g. 9876543210" required>
+        </div>
+      </div>
+      <!-- <div class="form-group row">
+        <label for="fine" class="col-sm-2 col-form-label">Fine pending: </label>
+        <div class="col-sm-4">
+          <input type="number" name="fine" class="form-control" placeholder="Write 0 for new customers" required>
+        </div>
+      </div> -->
+      <div class="form-group row">
+        <label for="fine" class="col-sm-2 col-form-label">Branch: </label>
+        <div class="col-sm-4">
+          <input type="number" name="branch" class="form-control" placeholder="2-digit branch ID" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-success" name="button">Register</button>
+          <button type="reset" class="btn btn-primary" name="button">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

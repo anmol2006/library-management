@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Customer Records</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <h2 class="heading">Retrieving Customer Records</h2>
+  <h2 class="heading">Select Parameter:</h2>
+  <form action="customer_handler.php" method="post" autocomplete="off">
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="customer_param" value="all" checked>
+    <label class="form-check-label" for="all_items">
+      All items
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="customer_param" value="by_branch_id">
+    <label class="form-check-label" for="branch_id">
+      By Branch ID:
+    </label>
+    <input type="number" name="branch_id_val" class="form-control col-sm-3" placeholder="2-digit Branch ID">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="customer_param" value="by_card_id">
+    <label class="form-check-label" for="card_id">
+      By Library Card ID:
+    </label>
+    <input type="number" name="card_id_val" class="form-control col-sm-3" placeholder="e.g. 101">
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="customer_param" value="pending_fine">
+    <label class="form-check-label" for="pending_fine">
+      Pending Fine
+    </label>
+  </div>
+
+<div class="form-group row">
+  <div class="col-sm-10">
+    <button type="submit" class="btn btn-success select-table-btn">Proceed</button>
+    <button type="reset" class="btn btn-primary select-table-btn" name="button">Reset</button>
+  </div>
+</div>
+
+
+  </form>
+</body>
+
+</html>
